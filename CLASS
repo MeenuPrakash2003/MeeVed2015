@@ -1,0 +1,24 @@
+class AITutor:
+    def __init__(self, voice_type):
+        self.voice_type = voice_type
+
+    def explain_concept(self, concept):
+        try:
+            if self.voice_type == "Shinchan":
+                # Implement Shinchan's way of explaining
+                print("Shinchan's voice: Let me tell you about " + concept)
+            elif self.voice_type == "Doraemon":
+                # Implement Doraemon's way of explaining
+                print("Doraemon's voice: Here's how " + concept + " works")
+            else:
+                raise ValueError("Invalid voice type selected")
+        except ValueError as e:
+            print("Error:", e)
+
+# Creating an instance of the AI tutor with Shinchan's voice
+shinchan_tutor = AITutor(voice_type="Shinchan")
+shinchan_tutor.explain_concept("Python Programming")
+
+# Creating an instance of the AI tutor with Doraemon's voice
+doraemon_tutor = AITutor(voice_type="Doraemon")
+doraemon_tutor.explain_concept("Artificial Intelligence")
