@@ -1,0 +1,13 @@
+import gtts
+from playsound import playsound
+
+from gtts import gTTS
+import os
+
+def generate_voice_cover(text, filename='/content/voice_cover.mp3', lang='en'):
+    tts = gTTS(text=text, lang=lang)
+    tts.save(filename)
+
+text_to_cover = "Your text here. This will be converted into AI voice."
+generate_voice_cover(text_to_cover)
+
