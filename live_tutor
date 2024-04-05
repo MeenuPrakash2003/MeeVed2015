@@ -1,0 +1,8 @@
+t=gtts.gTTS("hi meera,you idiot. how are you? i think you are living well in that hostel of yours. i hope you are eating well and sleeping well while nicely disturbing meenu and miru in your dorm")
+t.save("hi.mp3")
+playsound("hi.mp3")
+
+!ls hi.mp3
+!cat hi.mp3
+
+
